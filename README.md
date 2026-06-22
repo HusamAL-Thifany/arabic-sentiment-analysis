@@ -1,18 +1,27 @@
-# Arabic Sentiment Analysis
+# تحليل مشاعر التعليقات العربية
 
-Arabic sentiment classification (positive/negative) using **Logistic Regression** with **CountVectorizer**.
+مشروع لتصنيف المشاعر (إيجابي/سلبي) في التعليقات العربية باستخدام **Logistic Regression** مع **CountVectorizer**.
 
-## What is included
+## محتويات المستودع
 
-- Trained model files (`best_models/`)
-- Vectorizer files (`best_models/`)
-- Evaluation results and plots (`results/`)
-- Interactive UI built with **Gradio** inside the notebook (`arabic_sentiment_app.ipynb`)
+- النماذج المدربة وملفات الـ vectorizer:
+  - `best_models/`
+- نتائج التقييم والرسومات البيانية:
+  - `results/`
+- واجهة تفاعلية (Gradio) موجودة داخل الـ Notebook:
+  - `arabic_sentiment_app.ipynb`
 
-## How to run (Gradio)
+## كيفية الاستخدام (Gradio)
 
-Open `arabic_sentiment_app.ipynb` in Jupyter/VSCode and run the notebook cell that launches Gradio.
+1. افتح الملف: `arabic_sentiment_app.ipynb` باستخدام Jupyter أو VSCode.
+2. شغّل خلية/خلايا الـ Gradio التي تحتوي على `demo.launch(...)`.
+3. ستظهر واجهة ويب لكتابة تعليق عربي والحصول على التصنيف مع نسبة الثقة.
 
-## Notes
+## ملاحظة بخصوص البيانات
 
-The notebook expects the dataset file `arabic_sentiment_reviews.csv` to be present (for the training part).
+جزء التدريب داخل الـ Notebook يتطلب وجود ملف البيانات:
+
+- `arabic_sentiment_reviews.csv`
+
+(أما في حالة استخدام النموذج الجاهز فقط عبر واجهة Gradio، فلا تحتاج لوجود الملف).
+
