@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data (add your dataset name)
+arabic_sentiment_reviews.csv
+
+# OS
+.DS_Store
+Thumbs.db
